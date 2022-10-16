@@ -62,4 +62,14 @@ public class BasePage {
 
     }
 
+    /**
+     * @purpose To enter value into input element
+     * @param element
+     * @param value
+     */
+    public void enterText(By element, String value)
+    {
+        driver.findElement(element).sendKeys(value);
+    }
+
 }

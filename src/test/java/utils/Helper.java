@@ -10,7 +10,6 @@ public class Helper {
         BufferedReader reader = new BufferedReader(new FileReader(testdataFilePath));
         Properties prop = new Properties();
         prop.load(reader);
-
         return prop.getProperty(key);
 
     }
